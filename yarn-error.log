@@ -1,0 +1,83 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\Windown 10\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js run dev
+
+PATH: 
+  C:\Users\Windown 10\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Windown 10\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files (x86)\Skype\Phone;C:\Program Files\Git\cmd;C:\Program Files\nodejs;C:\Users\Windown 10\AppData\Local\Microsoft\WindowsApps;C:\Users\Windown 10\AppData\Roaming\npm;C:\Users\Windown 10\AppData\Local\atom\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  9.1.0
+
+Platform: 
+  win32 x64
+
+npm manifest: 
+  {
+    "name": "html-boilerplate",
+    "version": "1.0.0",
+    "description": "HTML Boilerplate",
+    "main": "index.js",
+    "scripts": {
+      "build": "./node_modules/.bin/gulp build",
+      "dev": "./node_modules/.bin/gulp run:dev",
+      "prod": "./node_modules/.bin/gulp run:prod"
+    },
+    "keywords": [
+      "HTML",
+      "CSS",
+      "Boilerplate",
+      "HTML Boilerplate Generator",
+      "HTML Boilerplate",
+      "HTML Generator"
+    ],
+    "author": "ninhva <anninh.59@gmail.com>",
+    "license": "MIT",
+    "devDependencies": {
+      "del": "^2.2.2",
+      "eslint": "^3.16.1",
+      "gulp": "^3.9.1",
+      "gulp-clean-css": "^2.4.0",
+      "gulp-connect": "^5.0.0",
+      "gulp-file-include": "^1.1.0",
+      "gulp-html-prettify": "0.0.1",
+      "gulp-htmlhint": "^0.3.1",
+      "gulp-if": "^2.0.2",
+      "gulp-imagemin": "^3.1.1",
+      "gulp-jsbeautifier": "^2.0.4",
+      "gulp-rev": "^7.1.2",
+      "gulp-rev-replace": "^0.4.3",
+      "gulp-sass": "^3.1.0",
+      "gulp-uglify": "^2.1.2",
+      "gulp-useref": "^3.1.2",
+      "gulp-watch": "^4.3.11",
+      "run-sequence": "^1.2.2"
+    },
+    "dependencies": {
+      "bootstrap": "^3.3.7",
+      "jquery": "^3.1.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: Command failed.
+  Exit code: 1
+  Command: C:\Windows\system32\cmd.exe
+  Arguments: /d /s /c .\node_modules\.bin\gulp run:dev
+  Directory: D:\tranning\boilerplate\html-boilerplate
+  Output:
+  
+      at ProcessTermError.MessageError (C:\Users\Windown 10\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:186:110)
+      at new ProcessTermError (C:\Users\Windown 10\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:226:113)
+      at ChildProcess.<anonymous> (C:\Users\Windown 10\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:30281:17)
+      at emitTwo (events.js:135:13)
+      at ChildProcess.emit (events.js:224:7)
+      at maybeClose (internal/child_process.js:943:16)
+      at Process.ChildProcess._handle.onexit (internal/child_process.js:220:5)

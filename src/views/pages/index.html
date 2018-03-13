@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- include head.html -->
+    @@include('../layouts/head.html', {
+      "title": "HTML Boilerplate"
+    })
+    <!-- include styles.html -->
+    @@include('../layouts/styles.html')
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- include header.html -->
+      @@include('../layouts/header.html')
+
+      <!-- include banner.html -->
+      @@include('../partials/banner.html')
+
+      <section class="main-container">
+          <div id="a" class="block-container">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="center">
+                
+                <div class="item-home">
+                  <div class="bg-slider" style="background-image: url('../../images/home/slide1.png')">
+                    <img class="pos-imghome" src="../../images/home/slide1.png" alt="slider home one">
+                    <div class="title-sliderhome">
+                      <h3 class="title-villa">ALLAMANDA ESTATE</h3>
+                      <p class="text-villa">Between sky and earth, in the middle of rice paddies, our charming eco lodge Allamanda Estate is waiting for you.</p>
+                    </div>
+                  </div>
+                  <div class="bg-slider" style="background-image: url('../../images/home/slide2.png')">
+                    <img class="pos-imghome" src="../../images/home/slide1.png" alt="slider home one">
+                    <div class="title-sliderhome">
+                      <h3 class="title-villa">ALLAMANDA ESTATE2</h3>
+                      <p class="text-villa">Between sky and earth, in the middle of rice paddies, our charming eco lodge Allamanda Estate is waiting for you.</p>
+                    </div>
+                  </div>
+                  <div class="bg-slider" style="background-image: url('../../images/home/slide3.png')">
+                    <img class="pos-imghome" src="../../images/home/slide1.png" alt="slider home one">
+                    <div class="title-sliderhome">
+                      <h3 class="title-villa">ALLAMANDA ESTATE3</h3>
+                      <p class="text-villa">Between sky and earth, in the middle of rice paddies, our charming eco lodge Allamanda Estate is waiting for you.</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </section>
+      <script>
+
+      </script>
+      <!-- include footer.html -->
+      @@include('../layouts/footer.html')
+    </div>
+    <!-- include scripts.html -->
+    @@include('../layouts/scripts.html')
+  </body>
+</html>

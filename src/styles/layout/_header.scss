@@ -1,0 +1,32 @@
+.stl-img {
+  background: #2f68b1;
+}
+.body-booknow {
+  background-image:linear-gradient(-180deg, #5896cf 0%, #2f68b1 100%);
+  border-radius:3px;
+  width:139px;
+  display: flex;
+  height:45px;
+  .icon{
+    color: white;
+    opacity: 0.5;
+    width: 20px;
+    height: 19px;
+    padding: 10px;
+  }
+  .title-booknow {
+    font-family: roboto;
+    font-size: 15px;
+    color: #ffffff;
+    text-align: left;
+    text-transform: uppercase;
+    padding: 12px 10px 10px 15px;
+    font-weight: 600;
+  }
+}
+.icon-menu {
+  background:#484841;
+  width:30px;
+  height:30px;
+  padding: 6px;
+}
