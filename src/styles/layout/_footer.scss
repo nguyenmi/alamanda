@@ -1,7 +1,7 @@
 
 .footer-container {
-  width:  100%;
-  position:  absolute;
+  width: 100%;
+  position: absolute;
   bottom: 0px;
   .body-footer {
     opacity: 0.2;
@@ -10,9 +10,9 @@
     padding: 12px;
   }
   .text-footer {
-    font-size:15px;
-    color:#ffffff;
-    text-align:left;
+    font-size: 15px;
+    color: #ffffff;
+    text-align: left;
     display: inline;
     .content-textfooter {
       display: inline;
@@ -20,11 +20,10 @@
   }
   .icon-footer {
     float: right;
-    color:#ffffff;
+    color: #ffffff;
     cursor: pointer;
   }
   .stl-icon {
     margin: 0px 8px;
-
   }
 }

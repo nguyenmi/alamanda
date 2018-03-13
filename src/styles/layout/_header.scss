@@ -1,4 +1,4 @@
-.header-content{
+.header-content {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -21,15 +21,19 @@
   margin: 25px;
 }
 .body-booknow {
-  background-image:linear-gradient(-180deg, #5896cf 0%, #2f68b1 100%);
-  border-radius:3px;
-  width:139px;
+  background-image: -webkit-linear-gradient(-180deg, #5896cf 0%, #2f68b1 100%);
+  border-radius: 3px;
+  width: 139px;
   display: flex;
-  height:36px;
+  height: 36px;
   margin-right: 15px;
   cursor: pointer;
   color: #d8d3d3;
-  .icon{
+  &:hover {
+    color: #ffffff;
+    background-image: -webkit-linear-gradient(-180deg, #5896cf 0%, #1e4982 100%);
+  }
+  .icon {
     width: 20px;
     height: 19px;
     padding: 8px 15px;
@@ -43,17 +47,14 @@
     font-weight: 600;
   }
 }
-.body-booknow:hover {
-  color: #ffffff;
-  background-image:linear-gradient(-180deg, #5896cf 0%, #1e4982 100%);
-}
+
 .icon-menu {
-  width:30px;
-  height:30px;
+  width: 30px;
+  height: 30px;
   padding: 6px;
   color: #dcd4d4;
   cursor: pointer;
-  :hover {
+  &:hover {
     color: #ffffff;
   }
 }

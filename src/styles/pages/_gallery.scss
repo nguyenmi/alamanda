@@ -1,8 +1,3 @@
-.item-gallery {
-  ::before{
-      background-image:linear-gradient(-180deg, #080808 0%, #b3aeae 100%);
-  }
-}
 .item-villa {
   background-repeat: no-repeat;
   background-size: cover;
@@ -13,17 +8,16 @@
   display: inline-block;
   margin: 10px 15px;
   position: relative;
+  &:before {
+    background-image:-webkit-linear-gradient(top, rgba(10, 10, 10, 0) 0%, #000000 98%, #000000 100%);
+    content: '';
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    left: 0;
+  }
 }
-.item-villa:before {
-  background-image:-webkit-linear-gradient(top, rgba(10, 10, 10, 0) 0%, #000000 98%, #000000 100%);
-  content: '';
-  bottom: 0;
-  position: absolute;
-  width: 100%;
-  height: 50%;
-  left: 0;
-}
-
 
 .gallery-slider{
   background-size: cover;
@@ -32,16 +26,17 @@
   position: relative;
   width:100%;
   height:100vh !important;
+  &:before {
+    background-image:-webkit-linear-gradient(-180deg, #00000078 100%, #58464682 0%);
+    content: '';
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    z-index: 2
+  }
 }
-.gallery-slider:before {
-  background-image:linear-gradient(-180deg, #00000078 100%, #58464682 0%);
-  content: '';
-  top: 0;
-  position: absolute;
-  width: 100%;
-  height: 50%;
-  z-index: 2
-}
+
 .body-gallery {
   position: absolute;
   top: 21%;
