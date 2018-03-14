@@ -17,6 +17,24 @@ $(document).ready(function(){
     arrows: false,
     autoplaySpeed: 2000,
   });
-});
 
-// this is slide gallery
+  // this is slide gallery detail
+  $('.body-bg').slick({
+    prevArrow: '.next-prev .left',
+		nextArrow: '.next-prev .right',
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    fade: true,
+    arrows: true,
+    asNavFor: '.body-img',
+  });
+  $('.body-img').slick({
+    slidesToShow: 7,
+    slidesToScroll: 1,
+    asNavFor: '.body-bg',
+    dots: false,
+    centerMode: false,
+    focusOnSelect: true,
+    arrows: false,
+  });
+});
