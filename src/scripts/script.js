@@ -37,4 +37,6 @@ $(document).ready(function(){
     focusOnSelect: true,
     arrows: false,
   });
+  // this is js gmap3
+
 });
