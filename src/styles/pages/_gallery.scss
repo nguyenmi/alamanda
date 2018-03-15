@@ -32,7 +32,7 @@
     width: 100%;
     height: 50%;
     content: '';
-    background-image: -webkit-linear-gradient(-180deg, #00000078 100%, #58464682 0%);
+    background-image: -webkit-linear-gradient(-180deg, rgba(0,0,0,.3) 100%, rgba(88, 70, 70, 0.49) 0%);
     z-index: 2;
   }
 }
