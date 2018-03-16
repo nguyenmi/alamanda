@@ -12,7 +12,7 @@ $(document).ready(function(){
   $('.item-home').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    // autoplay: true,
+    autoplay: true,
     dots: true,
     arrows: false,
     autoplaySpeed: 2000,
@@ -38,5 +38,11 @@ $(document).ready(function(){
     arrows: false,
   });
   // this is js gmap3
-
+  // this is js menu
+  $(".icon-menu").click(function(){
+    $(".content-menu").slideDown("slow");
+  });
+  $(".close").click(function(){
+    $(".content-menu").slideUp("slow");
+  });
 });
