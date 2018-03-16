@@ -12,7 +12,7 @@ $(document).ready(function(){
   $('.item-home').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
+    // autoplay: true,
     dots: true,
     arrows: false,
     autoplaySpeed: 2000,
