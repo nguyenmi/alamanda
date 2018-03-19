@@ -13,7 +13,6 @@ body{
 .bg-slider {
   @extend .pos-img;
   position: relative;
-  opacity: 0.7;
   background-image: -webkit-linear-gradient(-180deg, rgba(0,8,60,0.00) 0%, #00093c 100%);
   width: 100%;
   height: 100vh !important;
@@ -31,9 +30,10 @@ body{
 }
 .title-sliderhome {
   position: absolute;
-  top: 35%;
+  top: 50%;
   text-align: center;
-  width: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   .title-villas{
     font-size: 48px;
     color: #ffffff;
@@ -44,7 +44,7 @@ body{
     padding-bottom: 30px;
   }
   .text-villa {
-    font-size: 18px;
+    font-size: 16px;
     color: #ffffff;
     text-shadow: 0px 0px 4px rgba(0,0,0,0.56);
     text-align: center;
@@ -81,11 +81,25 @@ body{
 }
 .slick-dots {
   position: absolute;
-  right: 0px;
-  bottom: 258px;
-  list-style-type: circle;
-  cursor: pointer;
+  top: 50%;
+  right: 1%;
+  transform: translate(-1%, -50%);
 }
-#slick-slide-control00, #slick-slide-control01, #slick-slide-control02 {
-  display: none;
+.slick-dots button {
+  display: block;
+  width: 7px;
+  height: 7px;
+  color: transparent;
+  font-size: 0;
+  background: #fff;
+  border: none;
+  box-shadow: none;
+  margin: 15px;
+  padding: 0;
+  border-radius: 100%;
+}
+.slick-dots .slick-active button {
+    width: 10px;
+    height: 10px;
+    margin: 12px;
 }

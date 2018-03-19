@@ -38,5 +38,11 @@ $(document).ready(function(){
     arrows: false,
   });
   // this is js gmap3
-
+  // this is js menu
+  $(".icon-menu").click(function(){
+    $(".content-menu").slideDown("slow");
+  });
+  $(".close").click(function(){
+    $(".content-menu").slideUp("slow");
+  });
 });

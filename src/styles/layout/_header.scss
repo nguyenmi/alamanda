@@ -58,3 +58,97 @@
     color: #ffffff;
   }
 }
+
+// this is style menu
+.content-menu {
+  background: rgba(0,9,60,.7);
+  width: 100%;
+  height: 100vh;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  // transition: all .3s ease;
+}
+
+.close {
+  background: rgba(17,17,14,.5);
+  width: 27px;
+  height: 27px;
+  text-align: center;
+  margin: 20px 12px;
+  opacity: 1;
+  border-radius: 100%;
+  &:hover {
+    background: #000000;
+  }
+  .icon-close {
+    position: relative;
+    width: 30px;
+    height: 27px;
+    &:before {
+      content: "";
+      height: 2px;
+      width: 15px;
+      background: white;
+      display: block;
+      position: absolute;
+      transform: rotate(45deg);
+      top: 12px;
+      left: 6px;
+    }
+    &:after {
+      content: "";
+      height: 2px;
+      width: 15px;
+      background: white;
+      display: block;
+      position: absolute;
+      transform: rotate(-45deg);
+      top: 12px;
+      left: 6px;
+    }
+  }
+}
+
+.menu-top {
+  display: flex;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+}
+
+.menu-bottom {
+  display: flex;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
+}
+
+.item-menu {
+  margin: 0px 50px;
+  text-align: center;
+  color: rgba(255,255,255,.5);
+  &:hover {
+    cursor: pointer;
+    color: #fff;
+  }
+  .icon-menus {
+    color: #ffffff;
+    font-size: 48px;
+    margin: auto;
+    color: rgba(255,255,255,.5);
+    &:hover {
+      color: #fff;
+    }
+  }
+  .title-menu {
+    font-size: 18px;
+  }
+  .cl-home {
+    color: #fff;
+  }
+}
