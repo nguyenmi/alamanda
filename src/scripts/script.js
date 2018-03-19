@@ -41,8 +41,10 @@ $(document).ready(function(){
   // this is js menu
   $(".icon-menu").click(function(){
     $(".content-menu").slideDown("slow");
+    $("body").css("overflow", "hidden");
   });
   $(".close").click(function(){
     $(".content-menu").slideUp("slow");
+    $("body").css("overflow", "none");
   });
 });
