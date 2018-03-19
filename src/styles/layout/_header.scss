@@ -125,17 +125,16 @@
   top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
-  }
 }
 
 .item-menu {
   margin: 0px 50px;
   text-align: center;
-  color: rgba(255,255,255,.5);
   &:hover {
     cursor: pointer;
     color: #fff;
   }
+  color: rgba(255,255,255,.5);
   .icon-menus {
     color: #ffffff;
     font-size: 48px;
