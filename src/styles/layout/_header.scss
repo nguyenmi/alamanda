@@ -61,25 +61,27 @@
 
 // this is style menu
 .content-menu {
-  opacity: 0.9;
-  background: #000000;
+  background: rgba(0,9,60,.7);
   width: 100%;
   height: 100vh;
   display: none;
   position: absolute;
   top: 0;
   left: 0;
+  // transition: all .3s ease;
 }
 
 .close {
-  opacity: 1;
-  background: #11110e;
+  background: rgba(17,17,14,.5);
   width: 27px;
-  height: 24px;
-  color: #ffffff;
-  margin: 5px 11px;
+  height: 27px;
   text-align: center;
   margin: 20px 12px;
+  opacity: 1;
+  border-radius: 100%;
+  &:hover {
+    background: #000000;
+  }
   .icon-close {
     position: relative;
     width: 30px;
@@ -118,36 +120,33 @@
   .home, .the-detail , .location {
     margin: 0px 50px;
     text-align: center;
-    opacity: 0.5;
+    color: rgba(255,255,255,.5);
     &:hover {
-      border-bottom: 5px solid #498cca;
-      padding-bottom: 5px;
       cursor: pointer;
-      opacity: 1;
+      color: #fff;
     }
     .icon-menu-home {
        color: #ffffff;
-       width: 45px;
-       height: 36px;
-       font-size: 35px;
-       text-align: center;
-       margin-bottom: 15px;
+       font-size: 48px;
+       margin: auto;
     }
   }
-  .home {
-    border-bottom: 5px solid #498cca;
-    padding-bottom: 5px;
-    opacity: 1;
-  }
+
 }
-.img-menu {
-  // width: 45px;
-  height: 36px;
-  margin-bottom: 10px;
+.icon-menus {
+  color: #ffffff;
+  font-size: 48px;
+  margin: auto;
+  color: rgba(255,255,255,.5);
+  &:hover {
+    color: #fff;
+  }
 }
 .title-menu {
   font-size: 18px;
-  color: #ffffff;
+}
+.cl-home {
+  color: #fff;
 }
 .menu-bottom {
   display: flex;
@@ -158,12 +157,10 @@
   .gallery, .review, .rate, .contactus {
     margin: 0px 50px;
     text-align: center;
-    border-bottom: 5px solid transparent;
-    opacity: 0.5;
+    color: rgba(255,255,255,.5);
     &:hover {
-      border-bottom: 5px solid #498cca;
       cursor: pointer;
-      opacity: 1;
+      color: #fff;
     }
   }
 }

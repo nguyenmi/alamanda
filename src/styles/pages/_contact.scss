@@ -160,12 +160,10 @@
     line-height: 29px;
   }
 }
-.layout-area-slider {
+.layout-area-slider, .quick-fact-slider  {
   @extend .living-area-slider;
 }
-.quick-fact-slider {
-  @extend .living-area-slider;
-}
+
 .title-slider-quich {
   @extend .title-slider-living;
   padding: 30px 30px;
