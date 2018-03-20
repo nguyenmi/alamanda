@@ -4,8 +4,7 @@
   position: absolute;
   bottom: 0px;
   .body-footer {
-    opacity: 0.3;
-    background: #060e39;
+    background: rgba(6, 14, 57, .5);
     width: 100%;
     padding: 12px;
   }
@@ -19,8 +18,11 @@
   }
   .icon-footer {
     float: right;
-    color: #ffffff;
     cursor: pointer;
+    color: rgba(255, 255, 255, .5);
+    &:hover {
+      color: #ffffff;
+    }
   }
   .stl-icon {
     margin: 0px 8px;

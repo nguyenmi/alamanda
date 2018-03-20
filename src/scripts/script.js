@@ -1,13 +1,3 @@
-// $(document).ready(function(){
-//   $('.item-home').slick({
-//     dots: true,
-//     infinite: true,
-//     speed: 500,
-//     fade: true,
-//     cssEase: 'linear'
-//     });
-// });
-
 $(document).ready(function(){
   $('.item-home').slick({
     slidesToShow: 1,
@@ -45,6 +35,6 @@ $(document).ready(function(){
   });
   $(".close").click(function(){
     $(".content-menu").slideUp("slow");
-    $("body").css("overflow", "none");
+    $("body").css("overflow", "visible");
   });
 });
