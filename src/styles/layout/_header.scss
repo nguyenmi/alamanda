@@ -32,11 +32,25 @@
   &:hover {
     color: #ffffff;
     background-image: -webkit-linear-gradient(-180deg, #5896cf 0%, #1e4982 100%);
+    .cs-icon{
+      -webkit-transform: rotate(50deg); /* Safari */
+      transform: rotate(50deg);
+      transition: all 1s ;
+      &:after {
+        -webkit-transform: rotate(0deg); /* Safari */
+        transform: rotate(0deg);
+        transition: all 1s ;
+      }
+    }
   }
   .icon {
-    width: 20px;
     height: 19px;
     padding: 8px 15px;
+    text-transform: uppercase;
+    font-size: 15px;
+    .cs-icon {
+      padding-right: 5px;
+    }
   }
   .title-booknow {
     font-family: roboto;
@@ -48,16 +62,6 @@
   }
 }
 
-.icon-menu {
-  width: 30px;
-  height: 30px;
-  padding: 6px;
-  color: #dcd4d4;
-  cursor: pointer;
-  &:hover {
-    color: #ffffff;
-  }
-}
 
 // this is style menu
 .content-menu {
@@ -68,46 +72,87 @@
   position: absolute;
   top: 0;
   left: 0;
-  // transition: all .3s ease;
 }
 
-.close {
-  background: rgba(17,17,14,.5);
-  width: 27px;
-  height: 27px;
-  text-align: center;
-  margin: 20px 12px;
-  opacity: 1;
+.icon-menu {
+  width: 30px;
+  height: 30px;
+  padding: 5px 0px;
+  z-index: 999;
   border-radius: 100%;
+  background: rgba(17, 17, 14, .3);
+  cursor: pointer;
   &:hover {
-    background: #000000;
+    color: #fff;
+    background: rgba(17,17,14, .7);
   }
-  .icon-close {
-    position: relative;
-    width: 30px;
-    height: 27px;
-    &:before {
-      content: "";
-      height: 2px;
-      width: 15px;
-      background: white;
-      display: block;
-      position: absolute;
-      transform: rotate(45deg);
-      top: 12px;
-      left: 6px;
-    }
-    &:after {
-      content: "";
-      height: 2px;
-      width: 15px;
-      background: white;
-      display: block;
-      position: absolute;
-      transform: rotate(-45deg);
-      top: 12px;
-      left: 6px;
-    }
+}
+.btn-menu {
+  background: #fff;
+  width: 15px;
+  height: 2px;
+  position: relative;
+  display: block;
+  top: 9px;
+  margin: 0 auto;
+  -webkit-transition: all .4s ease;
+  -moz-transition: all .4s ease;
+  -o-transition: all .4s ease;
+  transition: all .4s ease;
+  &:before{
+    content: '';
+    position: absolute;
+    background: #fff;
+    width: 15px;
+    height: 2px;
+    top: -4px;
+    left: 0px;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    background: #fff;
+    width: 15px;
+    height: 2px;
+    top: 4px;
+    left: 0px;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+  }
+}
+.icon-close {
+  -webkit-animation-duration: 5s;
+   animation-duration: 5s;
+   -webkit-animation-fill-mode: both;
+   animation-fill-mode: both;
+   height: 0px;
+  &:before {
+    content: "";
+    height: 2px;
+    width: 15px;
+    background: #fff;
+    display: block;
+    position: absolute;
+    transform: rotate(45deg);
+    top: 0px;
+    right: 17px;
+  }
+  &:after {
+    content: "";
+    height: 2px;
+    width: 15px;
+    background: #fff;
+    display: block;
+    position: absolute;
+    transform: rotate(-45deg);
+    top: 0px;
+    right: 17px;
   }
 }
 
@@ -146,6 +191,10 @@
     border-bottom: 3px solid transparent;
     &:hover {
       color: #fff;
+      -webkit-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+      transform: scale(1.3);
+
     }
   }
   .icon-menus {
@@ -161,4 +210,7 @@
 .menu-bottom {
   @extend .menu-top;
   top: 60%;
+}
+.fl-body {
+  overflow: hidden;
 }

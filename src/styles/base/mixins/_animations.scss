@@ -13,3 +13,11 @@
      -o-animation: #{$str};
       animation: #{$str};
 }
+
+@mixin animation-scale($str){
+  -webkit-transform: scale($str);
+     -moz-transform: scale($str);
+    -ms-transform: scale($str);
+     -o-transform: scale($str);
+      transform: scale($str);
+}
