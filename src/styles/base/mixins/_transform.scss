@@ -43,3 +43,11 @@
        -o-transform: $string;
           transform: $string;
 }
+
+@mixin transform-cus ($ts1, $ts2) {
+  -webkit-transform: translate($ts1, $ts2);
+     -moz-transform: translate($ts1, $ts2);
+      -ms-transform: translate($ts1, $ts2);
+       -o-transform: translate($ts1, $ts2);
+          transform: translate($ts1, $ts2);
+}

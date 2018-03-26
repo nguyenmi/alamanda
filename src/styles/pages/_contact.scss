@@ -6,7 +6,7 @@
 .box-contact {
   width: 50%;
   padding: 50px;
-  background: #ffffff;
+  background: $color-white;
 }
 .map {
   width: 50%;
@@ -17,16 +17,15 @@
   margin: 0 auto;
   .des {
     font-size: 15px;
-    color: #000000;
+    color: $color-contact;
     line-height: 30px;
     margin-left: 15px;
-    opacity: 0.7;
   }
   .icon {
     width: 15px;
     height: 15px;
     line-height: 35px;
-    color: #757474;
+    color: $color-contact;
     text-align: center;
   }
 }
@@ -35,22 +34,16 @@
   margin: 0 auto;
   padding-top: 20px;
   .st-form {
-    background: #ffffff;
+    background: $color-white;
     border-radius: 3px;
     margin: 8px 0px;
     padding: 15px 20px;
     width: 100%;
-    height: 40px;
-    border: 1px solid rgba(151,151,151,.3);
-    color: rgba(0,0,0,.6);
+    border: 1px solid $border-form-contact;
+    color: $color-form-contact;
   }
-  .st-form-area {
-    background: #ffffff;
-    border-radius: 3px;
-    margin: 8px 0px;
-    padding: 15px 20px;
-    width: 100%;
-    border: 1px solid rgba(151,151,151,.3);
+  .st-form-hg {
+    height: 40px;
   }
   .wd40 {
     width: 49%;
@@ -62,44 +55,19 @@
   .btn-contact {
     display: block;
     padding: 6px 14px;
-    color: #ffffff;
-    letter-spacing: 0px;
-    line-height: 25px;
-    background: #004BD2;
+    color: $color-white;
+    background: $bg-button-contact;
     border: none;
     text-transform: uppercase;
-    opacity: 0.7;
     &:hover {
-      opacity: 1;
+      background: $hover-button-contact;
     }
   }
 }
-
-
 // this is style page village slider
-
 .thevillas-slider {
   @extend .st-pos-img;
   position: relative;
-  background-image: -webkit-linear-gradient(-180deg, rgba(0,8,60,0.00) 0%, #00093c 100%);
-  width: 100%;
-  height: 100vh !important;
-  &:before {
-    background-image: -webkit-linear-gradient(-180deg, rgba(0, 0, 0, 0.2) 100%, rgba(0, 0, 0, 0.2) 0%);
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 51%;
-    z-index: 2;
-  }
-
-}
-.living-area-slider {
-  @extend .st-pos-img;
-  position: relative;
-  background-image: -webkit-linear-gradient(-180deg, rgba(0,8,60,0.00) 0%, #00093c 100%);
   width: 100%;
   height: 100vh !important;
 }
@@ -107,87 +75,81 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  @include transform(translate(-50%, -50%));
   text-align: center;
+  display: none;
   .title-villas{
     font-size: 48px;
-    color: #ffffff;
+    color: $color-white;
     letter-spacing: 5.25px;
-    text-shadow: 0px 0px 4px rgba(0,0,0,0.50);
+    text-shadow: 0px 0px 4px $text-shadow-contact;
     margin: 7px 0px 30px 0px;
   }
   .des-villa {
     font-size: 34px;
-    color: #ffffff;
+    color: $color-white;
     letter-spacing: 2px;
-    text-shadow: 0px 2px 4px #000000;
+    text-shadow: 0px 2px 4px $color-black;
     text-align: center;
   }
   .booknow {
-    background: #ffffff;
+    background: $color-white;
     border-radius: 3px;
     width: 196px;
     height: 47px;
     margin: 0 auto;
     cursor: pointer;
-    color: #498cca;
+    color: $booknow-slider-villas;
     &:hover {
-      background: #e6e6e6;
+      background: $hover-bg-booknow;
     }
     .content-booknow {
       padding: 13px 0px;
       .title-viewore {
         font-size: 15px;
-        color: #498cca;
+        color: $booknow-slider-villas;
         text-transform: uppercase;
       }
     }
   }
 }
-
 .title-slider-living {
   position: absolute;
   top: 150px;
-  background: rgba(0, 0, 0, 0.5);
+  background: $rgba-black;
   width: 434px;
   padding: 50px;
+  display: none;
   .boder-living {
-    background: #498cca;
+    background: $booknow-slider-villas;
     width: 60px;
     height: 5px;
   }
   .title-living {
     font-size: 30px;
-    color: #ffffff;
-    letter-spacing: 1.66px;
+    color: $color-white;
     line-height: 50px;
     margin: 9px 0px;
   }
   .des-living {
     font-size: 15px;
-    color: #ffffff;
+    color: $color-white;
     line-height: 29px;
   }
 }
-.layout-area-slider, .quick-fact-slider  {
-  @extend .living-area-slider;
-}
-
 .title-slider-quich {
-  @extend .title-slider-living;
   padding: 30px 30px;
   top: 70px;
   right: 0;
   .boder-quich-tast {
-    background: #498cca;
+    background: $booknow-slider-villas;
     width: 60px;
     height: 5px;
     margin-left: 10px;
   }
   .title-quich-tast {
     font-size: 30px;
-    color: #ffffff;
-    letter-spacing: 1.66px;
+    color: $color-white;
     line-height: 40px;
     margin: 9px 0px;
     padding-left: 10px;
@@ -197,13 +159,13 @@
     width: 100%;
     .title-des-quich {
       font-size: 15px;
-      color: #ffffff;
+      color: $color-white;
       line-height: 26px;
       width: 30%;
     }
     .text-des-quich {
       font-size: 15px;
-      color: #ffffff;
+      color: $color-white;
       line-height: 29px;
       width: 70%;
     }

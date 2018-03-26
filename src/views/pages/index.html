@@ -9,6 +9,7 @@
     @@include('../layouts/styles.html')
   </head>
   <body>
+    @@include('../layouts/loadding.html')
     <div class="wrapper">
       <!-- include header.html -->
       @@include('../layouts/header.html')
@@ -21,28 +22,15 @@
           <div class="container-fluid">
             <div class="row">
               <div class="center">
-
                 <div class="item-home">
-                  <div class="bg-slider" style="background-image: url('../../images/home/slide1.png')">
-                    <div class="title-sliderhome">
-                      <h3 class="title-villas">VILLAS ANH</h3>
-                      <p class="text-villa">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>
-                      <div class="view-more">
-                        <div class="content-viewmore">
-                          <p class="title-viewore">View more</p>
-                          <div class="">
-                            <span class="fa fa-arrow-right icon-viewmore"></span>
-                          </div>
-                        </div>
-                      </div>
-                  </div>
-                  </div>
-                  <div class="bg-slider" style="background-image: url('../../images/home/slide2.png')">
-                    <div class="title-sliderhome">
-                      <h3 class="title-villas">VILLAS MAI</h3>
-                      <p class="text-villa">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>
-                      <div class="view-more">
-                        <div class="content-viewmore">
+                  <div class="item-slider">
+                    <div class="bg-slider " style="background-image: url('../../images/home/slide1.png')">
+                    </div>
+                    <div class="title-sliderhome ">
+                      <h3 class="title-villas animation w3-animate-zoom effect-one">VILLAS ANH</h3>
+                      <p class="text-villa animation w3-animate-left effect-two">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>
+                      <div class="view-more animation w3-animate-right effect-two">
+                        <div class="content-viewmore ">
                           <p class="title-viewore">View more</p>
                           <div class="">
                             <span class="fa fa-arrow-right icon-viewmore"></span>
@@ -51,12 +39,30 @@
                       </div>
                     </div>
                   </div>
-                  <div class="bg-slider" style="background-image: url('../../images/home/slide3.png')">
-                    <div class="title-sliderhome">
-                      <h3 class="title-villas">ALLAMANDA ESTATE</h3>
-                      <p class="text-villa">Between sky and earth, in the middle of rice paddies, our charming eco lodge Allamanda Estate is waiting for you.</p>
-                      <div class="view-more">
-                        <div class="content-viewmore">
+                  <div class="item-slider">
+                    <div class="bg-slider" style="background-image: url('../../images/home/slide2.png')">
+                    </div>
+                    <div class="title-sliderhome ">
+                      <h3 class="title-villas animation w3-animate-zoom effect-one">VILLAS MAI</h3>
+                      <p class="text-villa animation w3-animate-left effect-two">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>
+                      <div class="view-more animation w3-animate-right effect-two">
+                        <div class="content-viewmore ">
+                          <p class="title-viewore">View more</p>
+                          <div class="">
+                            <span class="fa fa-arrow-right icon-viewmore"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-slider">
+                    <div class="bg-slider" style="background-image: url('../../images/home/slide3.png')">
+                    </div>
+                    <div class="title-sliderhome ">
+                      <h3 class="title-villas animation w3-animate-zoom effect-one">ALLAMANDA ESTATE</h3>
+                      <p class="text-villa animation w3-animate-left effect-two">Between sky and earth, in the middle of rice paddies, our charming eco lodge Allamanda Estate is waiting for you.</p>
+                      <div class="view-more animation w3-animate-right effect-two">
+                        <div class="content-viewmore ">
                           <p class="title-viewore">View more</p>
                           <div class="">
                             <span class="fa fa-arrow-right icon-viewmore"></span>
@@ -66,7 +72,6 @@
                     </div>
                   </div>
                 </div>
-
               </div>
             </div>
           </div>

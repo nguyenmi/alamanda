@@ -16,3 +16,19 @@
   background:         linear-gradient(to bottom, #{$top} 0%, #{$bottom} 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$top}', endColorstr='#{$bottom}', GradientType=0 ); /* IE6-9 */
 }
+
+@mixin linear-gradient-bg($angle, $colorStart, $colorStop){
+    background-image: -webkit-linear-gradient($angle, $colorStart 0%, $colorStop 100%);
+    background-image:    -moz-linear-gradient($angle, $colorStart 0%, $colorStop 100%); /* FF3.6+ */
+    background-image:      -o-linear-gradient($angle, $colorStart 0%, $colorStop 100%); /* Opera 11.10+ */
+    background-image:     -ms-linear-gradient($angle,  $colorStart 0%, $colorStop 100%); /* IE10+ */
+    background-image:         linear-gradient($angle,  $colorStart 0%, $colorStop 100%); /* W3C */
+}
+
+@mixin linear-gradient-allbum($str, $color1, $color2, $color3){
+    background-image: -webkit-linear-gradient($str, $color1 0%, $color2 98%, $color3 100%);
+    background-image:    -moz-linear-gradient($str, $color1 0%, $color2 98%, $color3 100%); /* FF3.6+ */
+    background-image:      -o-linear-gradient($str, $color1 0%, $color2 98%, $color3 100%); /* Opera 11.10+ */
+    background-image:     -ms-linear-gradient($str, $color1 0%, $color2 98%, $color3 100%); /* IE10+ */
+    background-image:         linear-gradient($str, $color1 0%, $color2 98%, $color3 100%); /* W3C */
+}

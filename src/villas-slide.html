@@ -19,7 +19,28 @@
 <meta property="og:type" content="">
 <meta property="og:url" content="" />
 <!-- Google Font -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+<style media="screen">
+
+.preload {
+  margin: 0;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #fff;
+  z-index: 9999
+}
+.preload.loaded {
+  display: none;
+}
+</style>
 
     <!-- include styles.html -->
     <!-- build:css(.) styles/vendor.min.css -->
@@ -33,6 +54,10 @@
 
   </head>
   <body>
+    <div class="preload">
+  <img src="images/loading.gif" />
+</div>
+
     <div class="wrapper">
       <!-- include header.html -->
       <header class="header-container">
@@ -50,18 +75,15 @@
               <div class="book-now">
                 <div class="body-booknow">
                   <div class="icon">
-                    <span class="fa fa-bell"></span>
+                    <span class="fa fa-bell cs-icon"></span>
+                    Book Now
                   </div>
-                <h3 class="title-booknow">Book Now</h3>
                 </div>
               </div>
               <div class="icon-menu">
-                <span class="fa fa-bars"></span>
+                <span class="btn-menu "></span>
               </div>
               <div class="content-menu">
-                <div class="close">
-                  <span class="fa fa-times icon-close"></span>
-                </div>
                 <div class="body-menu">
                   <div class="menu-top">
                     <div class="center">
@@ -138,33 +160,41 @@
             <div class="row">
               <div class="center">
                 <div class="item-home">
-                  <div class="thevillas-slider" style="background-image: url('../../images/contact/slider-contact1.png')">
+                  <div class="item-slider-villas">
+                    <div class="thevillas-slider" style="background-image: url('../../images/contact/slider-contact1.png')">
+                    </div>
                     <div class="title-slidervillas">
-                      <p class="des-villa">An Oasis Away From Home</p>
-                      <h3 class="title-villas">VILLAS SEN</h3>
-                      <div class="booknow">
+                      <p class="des-villa animation w3-animate-top effect-two">An Oasis Away From Home</p>
+                      <h3 class="title-villas animation w3-animate-zoom effect-one">VILLAS SEN</h3>
+                      <div class="booknow animation w3-animate-right effect-two">
                         <div class="content-booknow">
                           <p class="title-viewore">Book now</p>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="layout-area-slider" style="background-image: url('../../images/contact/slider-contact2.png')">
-                    <div class="title-slider-living">
+                  <div class="item-slider-villas">
+                    <div class="thevillas-slider" style="background-image: url('../../images/contact/slider-contact2.png')">
+                    </div>
+                    <div class="title-slider-living animated w3-animate-zoom">
                       <div class="boder-living"></div>
                       <h3 class="title-living">Layout</h3>
                       <p class="des-living">Nestled amongst lawns, Villa Sen is a tranquil retreat from the busyness of modern life. Completed with complimentary wifi network and a personal guest assistant, Villa Mai is a cluster of eight parashrea stellata wooden chest houses and two cottages that can comfortably house you, your family, and friends.</p>
                     </div>
                   </div>
-                  <div class="living-area-slider" style="background-image: url('../../images/contact/slider-contact4.png')">
-                    <div class="title-slider-living">
+                  <div class="item-slider-villas">
+                    <div class="thevillas-slider" style="background-image: url('../../images/contact/slider-contact4.png')">
+                    </div>
+                    <div class="title-slider-living animated w3-animate-zoom">
                       <div class="boder-living"></div>
                       <h3 class="title-living">Living area</h3>
                       <p class="des-living">The villa has a spacious living room, partially surrounded by a water lily pond overlooking the deck and swimming pool. The living room features an exquisite  Vietnamese craftsmanship  from wooden furnishings to artistic wood carvings.</p>
                     </div>
                   </div>
-                  <div class="quick-fact-slider" style="background-image: url('../../images/contact/slider-contact5.png')">
-                    <div class="title-slider-quich">
+                  <div class="item-slider-villas">
+                    <div class="thevillas-slider" style="background-image: url('../../images/contact/slider-contact5.png')">
+                    </div>
+                    <div class="title-slider-living title-slider-quich animated w3-animate-zoom">
                       <div class="boder-quich-tast"></div>
                       <h3 class="title-quich-tast">Quich facts</h3>
                       <div class="des-quich">
@@ -240,11 +270,11 @@
     <!-- build:js(.) scripts/vendor.min.js -->
 <script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
 <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>
 <!-- endbuild -->
 <!-- build:js scripts/script.min.js -->
 <script type="text/javascript" src="scripts/script.js"></script>
 <!-- endbuild -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>
 <!-- js slick -->
 <!--js gmap3-->
 
