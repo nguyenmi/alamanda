@@ -16,30 +16,27 @@
     margin:15px 10px;
   }
 }
-
 .stl-img {
   margin: 25px;
 }
 .body-booknow {
-  background-image: -webkit-linear-gradient(-180deg, #5896cf 0%, #2f68b1 100%);
+  @include linear-gradient-bg(-180deg, #5896cf, #2f68b1);
   border-radius: 3px;
   width: 139px;
   display: flex;
   height: 36px;
   margin-right: 15px;
   cursor: pointer;
-  color: #d8d3d3;
+  color: $color-booknow;
   &:hover {
-    color: #ffffff;
-    background-image: -webkit-linear-gradient(-180deg, #5896cf 0%, #1e4982 100%);
+    color: $color-white;
+    @include linear-gradient-bg(-180deg, #5896cf, #1e4982);
     .cs-icon{
-      -webkit-transform: rotate(50deg); /* Safari */
-      transform: rotate(50deg);
-      transition: all 1s ;
+      @include transform(rotate(50deg));
+      @include transition(all 1s ease);
       &:after {
-        -webkit-transform: rotate(0deg); /* Safari */
-        transform: rotate(0deg);
-        transition: all 1s ;
+        @include transform(rotate(0deg));
+        @include transition(all 1s ease);
       }
     }
   }
@@ -52,20 +49,10 @@
       padding-right: 5px;
     }
   }
-  .title-booknow {
-    font-family: roboto;
-    font-size: 15px;
-    text-align: left;
-    text-transform: uppercase;
-    padding: 10px 10px 10px 15px;
-    font-weight: 600;
-  }
 }
-
-
 // this is style menu
 .content-menu {
-  background: rgba(0,9,60,.7);
+  background: $bg-content-menu;
   width: 100%;
   height: 100vh;
   display: none;
@@ -80,66 +67,55 @@
   padding: 5px 0px;
   z-index: 999;
   border-radius: 100%;
-  background: rgba(17, 17, 14, .3);
+  background: $bg-icon-menu;
   cursor: pointer;
   &:hover {
-    color: #fff;
-    background: rgba(17,17,14, .7);
+    color: $color-white;
+    background: $hover-bg-icon-menu;
   }
 }
 .btn-menu {
-  background: #fff;
+  background: $color-white;
   width: 15px;
   height: 2px;
   position: relative;
   display: block;
   top: 9px;
   margin: 0 auto;
-  -webkit-transition: all .4s ease;
-  -moz-transition: all .4s ease;
-  -o-transition: all .4s ease;
-  transition: all .4s ease;
+  @include transition(all .4s ease);
   &:before{
     content: '';
     position: absolute;
-    background: #fff;
+    background: $color-white;
     width: 15px;
     height: 2px;
     top: -4px;
     left: 0px;
-    -webkit-transition: all .4s ease;
-    -moz-transition: all .4s ease;
-    -o-transition: all .4s ease;
-    transition: all .4s ease;
+    @include transition(all .4s ease);
   }
   &:after {
     content: '';
     position: absolute;
-    background: #fff;
+    background: $color-white;
     width: 15px;
     height: 2px;
     top: 4px;
     left: 0px;
-    -webkit-transition: all .4s ease;
-    -moz-transition: all .4s ease;
-    -o-transition: all .4s ease;
-    transition: all .4s ease;
+    @include transition(all .4s ease);
   }
 }
 .icon-close {
-  -webkit-animation-duration: 5s;
-   animation-duration: 5s;
-   -webkit-animation-fill-mode: both;
-   animation-fill-mode: both;
-   height: 0px;
+  @include animation-duration(5s);
+  @include animation-fill-mode(both);
+ height: 0px;
   &:before {
     content: "";
     height: 2px;
     width: 15px;
-    background: #fff;
+    background: $color-white;
     display: block;
     position: absolute;
-    transform: rotate(45deg);
+    @include transform(rotate(45deg));
     top: 0px;
     right: 17px;
   }
@@ -147,15 +123,14 @@
     content: "";
     height: 2px;
     width: 15px;
-    background: #fff;
+    background: $color-white;
     display: block;
     position: absolute;
-    transform: rotate(-45deg);
+    @include transform(rotate(-45deg));
     top: 0px;
     right: 17px;
   }
 }
-
 .menu-top {
   margin: 0;
   padding: 0;
@@ -166,35 +141,28 @@
   left: 50%;
   display: inline-block;
   text-align: center;
-  -webkit-transform: translate(-50%,-50%);
-  -moz-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
+  @include transform(translate(-50%,-50%));
   .center {
     margin: 0 auto;
     position: relative;
   }
   .title-menu {
     display: inline-block;
-    margin: 0 0 30px;
+    margin: 0px 30px;
     padding: 20px 90px;
     position: relative;
-
   }
   .link-menu {
     text-transform: uppercase;
     font-size: 18px;
-    color: rgba(255,255,255,.5);
+    color: rgba(255, 255, 255, .5);
     font-family: Montserrat;
     padding: 10px 5px;
-    width: 100%;
     display: block;
     border-bottom: 3px solid transparent;
     &:hover {
-      color: #fff;
-      -webkit-transform: scale(1.3);
-      -ms-transform: scale(1.3);
-      transform: scale(1.3);
-
+      color: $color-white;
+      @include transform(scale(1.3));
     }
   }
   .icon-menus {
@@ -203,10 +171,9 @@
     margin-bottom: 20px;
   }
   .color-white {
-    color : white;
+    color : $color-white;
   }
 }
-
 .menu-bottom {
   @extend .menu-top;
   top: 60%;
